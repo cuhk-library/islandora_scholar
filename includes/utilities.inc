@@ -41,11 +41,12 @@ function islandora_scholar_get_view(AbstractObject $object) {
   );
   if (isset($object['MODS']) && islandora_datastream_access(ISLANDORA_VIEW_OBJECTS, $object['MODS'])) {
     module_load_include('inc', 'islandora_scholar', 'includes/csl_select.form');
+    if(variable_get('islandora_scholar_display_csl', FALSE)){
     $display['citation_select'] = drupal_get_form('islandora_scholar_citation_select_form', $object->id);
     $display['citation']['#markup'] = citeproc_bibliography_from_mods(
       citeproc_default_style(), $object['MODS']->content
     );
-
+    }
     if (variable_get('islandora_scholar_google_scholar_search_enabled', FALSE)) {
       // Google Scholar Search.
       $mods_xml = simplexml_load_string($object['MODS']->content);
@@ -193,12 +194,20 @@ function islandora_scholar_get_metadata_display($object, $weight) {
     // Borrowing core JS for fieldsets.
     drupal_add_js('misc/form.js');
     drupal_add_js('misc/collapse.js');
-    $metadata = islandora_retrieve_metadata_markup($object);
     $description = islandora_retrieve_description_markup($object);
-    $display = array(
-      '#weight' => $weight,
-      '#markup' => $description . $metadata,
-    );
+    if(variable_get('islandora_scholar_show_metadata_display', FALSE)){
+      $metadata = islandora_retrieve_metadata_markup($object);
+      $display = array(
+        '#weight' => $weight,
+        '#markup' => $description . $metadata,
+      );
+    }else{
+      $display = array(
+        '#weight' => $weight,
+        '#markup' => $description,
+      );
+    }
+    
   }
   else {
     module_load_include('inc', 'islandora_scholar', 'includes/coins');

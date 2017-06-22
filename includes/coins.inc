@@ -269,8 +269,8 @@ class Coins {
       if ($contributors != NULL || $admin) {
         $rows[] = array(t('Contributors'), rtrim($contributors, ', '));
       }
-      $url = l(t('Download PDF'), "islandora/object/{$this->pid}/datastream/PDF/download");
-      $rows[] = array(t('URL'), $url);
+      //$url = l(t('Download PDF'), "islandora/object/{$this->pid}/datastream/PDF/download");
+      //$rows[] = array(t('URL'), $url);
     }
     else {
       if ($authors != NULL || $admin) {
