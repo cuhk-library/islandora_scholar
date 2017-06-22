@@ -11,11 +11,11 @@ This module requires the following modules/libraries:
 * [Islandora](https://github.com/islandora/islandora)
 * [Tuque](https://github.com/islandora/tuque)
 * [Islandora Solr](https://github.com/Islandora/islandora_solr_search)
-* Citeproc (included in /modules)
-* CSL (included in /modules)
-* Bibutils (included in /modules)
+* [Bibutils](https://github.com/Islandora/islandora_scholar/tree/7.x/modules/bibutils) (included in /modules)
+* [Citeproc](https://github.com/Islandora/islandora_scholar/tree/7.x/modules/citeproc) (included in /modules)
+* [CSL](https://github.com/Islandora/islandora_scholar/tree/7.x/modules/csl) (included in /modules)
 
-Additionally, as this module requires the Citeproc moudle, it is necessary to install the [citeproc-php](https://github.com/Islandora/citeproc-php) library into the `sites/all/libraries` directory, such that the main `CiteProc.php` file is located at `sites/all/libraries/citeproc-php/CiteProc.php`. More information is available in [Citeproc's README.md file](https://github.com/Islandora/islandora_scholar/blob/7.x/modules/citeproc/README.md).
+Additionally, as this module requires the Citeproc module, it is necessary to install the [citeproc-php](https://github.com/Islandora/citeproc-php) library into the `sites/all/libraries` directory, such that the main `CiteProc.php` file is located at `sites/all/libraries/citeproc-php/CiteProc.php`. More information is available in [Citeproc's README.md file](https://github.com/Islandora/islandora_scholar/blob/7.x/modules/citeproc/README.md).
 
 ## Installation
 
@@ -25,7 +25,7 @@ Install as usual, see [this](https://drupal.org/documentation/install/modules-th
 
 Set the path for `Sherpa/RoMEO` in Administration » Islandora » Solution pack configuation » Scholar (admin/islandora/solution_pack_config/scholar).
 
-![image](https://cloud.githubusercontent.com/assets/2371345/9771917/750f6e88-570f-11e5-9804-23b561bc1dfa.png)
+![image](https://cloud.githubusercontent.com/assets/2738244/19038481/b1391c48-8949-11e6-9db9-3f681380c65f.png)
 
 Islandora 7 has re-defined how we are displaying citations to the user. As such, existing citations should be updated using the provided Drush script. The command creates PDF derivatives for any existing attached PDFs as the Google PDF Viewer has been removed in favor of displaying just the PREVIEW datastream.
 

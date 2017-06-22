@@ -1,16 +1,16 @@
-# PMID Importer
+# PMID Populator
 
 ## Introduction
 
-Importer plugin for Pubmed ID to create citation objects.
+Populator plugin for PubMed, to create citation objects.
 
 ## Requirements
 
 This module requires the following modules/libraries:
 
 * [Islandora](https://github.com/Islandora/islandora)
+* [Islandora Populator](https://github.com/Islandora/islandora_populator)
 * [Islandora Scholar](https://github.com/Islandora/islandora_scholar)
-* [Islandora Importer](https://github.com/Islandora/islandora_importer)
 * [Islandora PMID](https://github.com/Islandora/islandora_scholar/tree/7.x/modules/pmid)
 
 ## Installation

@@ -1,32 +1,32 @@
-# DOI Importer Module
+
+# Islandora EndNote XML
 
 ## Introduction
 
-Importer plugin for Digital Object Identifiers, to create citation objects.
+Support code for EndNote XML, to create citation objects.
 
 ## Requirements
 
 This module requires the following modules/libraries:
 
 * [Islandora](https://github.com/islandora/islandora)
-* [Islandora Importer](https://github.com/islandora/islandora_importer)
 * [Islandora Scholar](https://github.com/islandora/islandora_scholar)
-* [Islandora DOI](https://github.com/Islandora/islandora_scholar/tree/7.x/modules/doi)
+* [Bibutils](https://github.com/Islandora/islandora_scholar/tree/7.x/modules/bibutils)
 
 ## Installation
 
 Install as usual, see [this](https://drupal.org/documentation/install/modules-themes/modules-7) for further information.
 
-## Configuration
+## Documentation
 
-Set the value for `OpenURL PID` at `admin/islandora/scholar/doi_importer` as CrossRef does not allow guest searching.
+Further documentation for this module is available at [our wiki](https://wiki.duraspace.org/display/ISLANDORA/Islandora+Scholar).
 
 ## Troubleshooting/Issues
 
 Having problems or solved a problem? Check out the Islandora google groups for a solution.
 
 * [Islandora Group](https://groups.google.com/forum/?hl=en&fromgroups#!forum/islandora)
-* [Islandora Dev Group](https://gr:woups.google.com/forum/?hl=en&fromgroups#!forum/islandora-dev)
+* [Islandora Dev Group](https://groups.google.com/forum/?hl=en&fromgroups#!forum/islandora-dev)
 
 ## Maintainers/Sponsors
 
@@ -42,3 +42,4 @@ If you would like to contribute to this module, please check out [CONTRIBUTING.m
 ## License
 
 [GPLv3](http://www.gnu.org/licenses/gpl-3.0.txt)
+

@@ -1,17 +1,16 @@
-# PMID Importer
+
+# Islandora DOI
 
 ## Introduction
 
-Importer plugin for Pubmed ID to create citation objects.
+Support code for Digital Object Identifiers, to create citation objects.
 
 ## Requirements
 
 This module requires the following modules/libraries:
 
-* [Islandora](https://github.com/Islandora/islandora)
-* [Islandora Scholar](https://github.com/Islandora/islandora_scholar)
-* [Islandora Importer](https://github.com/Islandora/islandora_importer)
-* [Islandora PMID](https://github.com/Islandora/islandora_scholar/tree/7.x/modules/pmid)
+* [Islandora](https://github.com/islandora/islandora)
+* [Islandora Scholar](https://github.com/islandora/islandora_scholar)
 
 ## Installation
 
@@ -19,14 +18,7 @@ Install as usual, see [this](https://drupal.org/documentation/install/modules-th
 
 ## Configuration
 
-Enable the module via Administration » Modules (admin/modules)
-
-## Troubleshooting/Issues
-
-Having problems or solved a problem? Check out the Islandora google groups for a solution.
-
-* [Islandora Group](https://groups.google.com/forum/?hl=en&fromgroups#!forum/islandora)
-* [Islandora Dev Group](https://groups.google.com/forum/?hl=en&fromgroups#!forum/islandora-dev)
+See admin/islandora/solution_pack_config/scholar/islandora_doi for setting CrossREF URL and registered email.
 
 ## Maintainers/Sponsors
 
@@ -34,7 +26,6 @@ Current maintainers:
 
 * [Bryan Brown](https://github.com/bryjbrown)
 * [Don Richards](https://github.com/DonRichards)
-
 
 ## Development
 
